@@ -1,0 +1,94 @@
+<form id="quiz" name="quiz">
+
+    <p>What cookie is served as a dessert in Chinese restaurants</p>
+    <input type="radio" id="mc" name="question2" value="Fortunecookie">Fortune cookie<br>
+    <input type="radio" id="mc" name="question2" value="Fortunecookie">Fortune cookie<br>
+    
+    <p>What cookie is served as a dessert in Chinese restaurants</p>
+    <input type="radio" id="mc" name="question2" value="Fortunecookie">Fortune cookie<br>
+    <input type="radio" id="mc" name="question2" value="Fortunecookie">Fortune cookie<br>
+    
+    <p>What cookie is served as a dessert in Chinese restaurants</p>
+    <input type="radio" id="mc" name="question2" value="Fortunecookie">Fortune cookie<br>
+    <input type="radio" id="mc" name="question2" value="Fortunecookie">Fortune cookie<br>
+    
+    <input id="button" type="button" value="Done" onclick="check();">
+    </form>
+    
+    <div id="after_submit">
+      <p id="message"></p>
+      <p id="number_correct"></p>
+    </div>
+        </body>
+
+
+
+
+
+
+
+
+
+       (css)
+        #after_submit{
+            visibility: hidden;
+        }
+        #quiz{
+            
+            margin-left: 500px;
+            background: #d2def2;
+            padding: 10px 20px 10px 20px;
+            width: 400px;
+            border-radius: 20px;
+            float: left;
+        }
+        input{
+            margin-bottom: 20px;
+            display: block;
+        }
+
+
+
+
+
+
+
+
+
+
+
+        (js)
+        function check(){
+            var question1 = document.quiz.question1.value;
+            var question2 = document.quiz.question2.value;
+            var question3 = document.quiz.question3.value;
+            var correct=0;
+          
+            if(question1=="fortune cookie"){
+              correct++;
+            }
+          
+            if(question2=="fortune cookie"){
+              correct++;
+            }
+          
+            if(question3=="fortune cookie"){
+              correct++;
+            }
+            var messages = ["Great Job!" , "That's okay", "Oops better luck next time"];
+            var range;
+          
+            if(correct < 1){
+              range = 2;
+            }
+            if(correct < 2){
+              range = 1;
+            }
+            if(correct < 3){
+              range = 0;
+            }
+          
+           document.getElementById("after_submit").style.visibility="visible";
+              
+              document.getElementById("message").innerHTML = messages[range];
+              document.getElementById("number_correct").inhertHTML ="You got"+ correct+ "correct."};
