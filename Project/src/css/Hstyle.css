@@ -1,0 +1,143 @@
+
+p{
+    color: rgb(147, 101, 41); 
+    font-family:'Lucida Sans';
+    font-size: 25px;
+    text-align: center;
+    margin-top: 0;
+    padding-top: 150px;
+  }
+
+.container{
+    height: 100vh;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-x: hidden;
+    overflow-y: auto;
+}  
+
+.parallax{
+    width: 510;
+    height: 1000px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+
+    transform-style: preserve-3d;
+}
+
+.background{
+   
+    width: 390px;
+    height: 90px ;
+    padding: 80px 60px;
+    margin-top: 245px;
+    background-color: inherit;
+    position: relative;
+    border-radius: 10px;
+    transform: translate(-1px) scale(2.15);
+}
+
+.b1{
+    background: url(h1.jpeg) center / cover;
+    background-size:100%;
+    
+}
+.b2{
+    background: url(h5.png) center / cover;
+}
+.b3{
+    background: url(h3.jpeg) center / cover;
+}
+
+.normal{
+    width: 100%;
+    height: 62.5vh ;
+    background: rgb(255, 255, 255);
+    position: flex;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    z-index: 2;
+}
+
+
+
+
+
+
+
+
+
+body{ 
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Grande', 'Lucida Sans';
+    
+}
+nav{
+    top: 0;
+    padding: 0;
+    width: 100%;
+    height: 280px;
+    box-sizing: border-box;
+    position: absolute;
+    background: linear-gradient( to right,
+    rgb(97, 26, 163),
+      rgb(38, 18, 168),
+      rgb(38, 18, 168),
+      rgb(97, 26, 163)); ;
+      border-bottom: 5px solid #000000;
+    
+      
+}
+.nav_links{
+    float: left;
+    padding-left: 165px;
+}
+.logo{
+    left: 43%;
+    float: left;
+    position: absolute;
+    top: -10%;
+    
+  }
+ ul{
+    list-style: none;
+    float: right;
+    padding:0 ;
+    margin: 0;
+    display: flex;
+}
+ul li{
+    padding: 12px 40px;
+    color: white;
+    display: inline;
+}
+ul li a{ 
+    margin-top: 210px;
+    text-align: left;
+    padding: 18px 50px;
+    text-decoration: none;
+    float:left;
+    font-size: 14px;
+    color: rgb(205, 198, 191); 
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.5s , text-decoration 0.5s;
+}
+
+li a:hover{
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffc0cb;
+    opacity: 0.75;
+    text-decoration: underline;
+}
+.active {
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0.75; 
+    color: pink;
+    text-decoration: underline;
+}
