@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+    <title> Contact Us </title>
+    <link rel="stylesheet" type="text/css" href="Cstyle.css">
+
+    </head>
+<body>
+
+
+
+
+           <nav>
+            <div class="logo"><a href="Home.html"><img src="LOGO.png" height="250px"></a></div>
+ <ul>
+    <li><a href="Home.html"> Home </a></li>
+    <li><a href="Menu.html"> Menu </a></li>
+    <li><a href="About.html"> About </a></li>
+    <li><a class="active" href="Contact.html"> Contact </a></li>
+    <li><a href="Miniquiz.html"> Mini Quiz </a></li>
+ </ul>
+          </nav>
+
+    
+    <p>
+        If you have any questions or feedbacks please write down below: 
+    </p>
+
+ <div class="contactbox">
+   <form>
+    <input type="text" class="input" placeholder=" Your Name"> 
+    <input type="text" class="input" placeholder=" Your Email">
+    <input type="text" class="input" placeholder=" Subject">
+    <textarea type="text" class="input textarea" placeholder=" Message"></textarea>
+
+<button type="button" class="btn" onclick="fresh()"> Submit </button>
+   </form>
+ </div>
+
+ <script>
+   function fresh() {
+     alert("Thanks, your message has been sent successfully!");
+     window.location.reload();
+   }
+   </script>
+
+
+
+
+
+</body>
+</html>
